@@ -1,4 +1,3 @@
-const API_KEY = "ae5ba1c4b4e5bd439f20736b8b236750"
 const cityHtml = document.querySelector("#weather p:first-child")
 const tempHtml = document.querySelector("#weather p:nth-of-type(2)")
 const weatherHtml = document.querySelector("#weather p:last-child")
@@ -10,6 +9,8 @@ const mapWrap = document.querySelector(".wrapMap")
 
 let lat
 let lon
+
+const API_KEY = "ae5ba1c4b4e5bd439f20736b8b236750"
 
 const canGetWeather = (position) => {
   lat = position.coords.latitude
@@ -25,7 +26,7 @@ const canGetWeather = (position) => {
 }
 
 const cantGetWeather = () => {
-  return
+  return alert("위치 정보 엑세스를 허용해주세요! ")
 }
 
 navigator.geolocation.getCurrentPosition(canGetWeather, cantGetWeather)
