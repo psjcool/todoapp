@@ -9,7 +9,8 @@ const PLACEHOLDER_DEFAULT = "할일을 작성하시고 엔터를 눌러주세요
 
 const todoFormHandler = (e) => {
   e.preventDefault()
-  if(JSON.parse(localStorage.getItem("todos")).length >= 10){
+  const check = localStorage.getItem("todos")
+  if(check && JSON.parse(localStorage.getItem("todos")).length >= 10){
     todoInput.value = ""
     todoInput.placeholder="리스트가 너무 많아요!"
     return
@@ -22,7 +23,7 @@ const todoFormHandler = (e) => {
     value: todo
   }
   addLiHandler(todoObj)
-  todos = JSON.parse(localStorage.getItem("todos"))
+  todos = !check ? [] : JSON.parse(localStorage.getItem("todos"))
   todos.push(todoObj)
   localStorage.setItem("todos", JSON.stringify(todos))
 }
