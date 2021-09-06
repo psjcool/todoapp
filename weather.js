@@ -52,12 +52,3 @@ openMap.addEventListener("click", () => {
 closeMap.addEventListener("click", () => {
   mapWrap.style.display = "none"
 })
-
-// fetch(`https://cors-anywhere.herokuapp.com/http://openapi.data.go.kr/openapi/service/rest/Covid19/getCovid19InfStateJson?serviceKey=RH8fuOiKGZ3J0RMcI%2BWX0tINFW8H3258QscZw1jnyzdcpukvPmH9G9voZUhIDIUJ0XdQejx4KbpFBWlJ6WcHQQ%3D%3D&pageNo=1&numOfRows=10&startCreateDt=20200310&endCreateDt=20200315`,{method: "GET"})
-// .then(data => data.json())
-// .catch(error => console.log(error))
-// .then(data => console.log(data))
-
-// fetch(`https://cors-anywhere.herokuapp.com/http://openapi.data.go.kr/openapi/service/rest/Covid19/getCovid19SidoInfStateJson?serviceKey=RH8fuOiKGZ3J0RMcI%2BWX0tINFW8H3258QscZw1jnyzdcpukvPmH9G9voZUhIDIUJ0XdQejx4KbpFBWlJ6WcHQQ%3D%3D&pageNo=1&numOfRows=10&startCreateDt=20200410&endCreateDt=20200410`)
-// .then(data => console.log(data))
-// .catch(error => console.log(error))

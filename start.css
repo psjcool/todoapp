@@ -122,7 +122,7 @@ body{
 .openMap{
   all: unset;
   width: 100px;
-  height: 30px;
+  height: 50px;
   background:rgba(255, 255, 255, 0.7);
   border: steelblue 3px solid;
   border-radius: 15px;
@@ -161,4 +161,21 @@ body{
   height: 70vh;
   margin-bottom: 10px;
   border: steelblue 3px solid;
+}
+
+.covid-btn{
+  all: unset;
+  width: 100px;
+  height: 50px;
+  background:rgba(255, 255, 255, 0.7);
+  border: steelblue 3px solid;
+  border-radius: 15px;
+  font-size: 15px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(50, 50, 93, 0.11);
+  position: absolute;
+  right: 10px;
+  top: 200px;
+  z-index: 2;
+  cursor: pointer;
 }
